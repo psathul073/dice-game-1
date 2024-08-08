@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body onload="randomGen()">
+    <div class="container">
+      <h1>Refresh And Play.</h1> <img class="tHide" src="images/trophy.png" alt="trophy image">
+      <div class="dice-box">
+        <div class="dice">
+          <div class="diceP" id="diceP-1">
+          <p>Player-1 </p> <img id="winnerA" class="hide win" src="images/medal.png" alt="winner medal">
+        </div>
+          <img id="diceA" src="images/dice-6.png" alt="dice image">
+        </div>
+        <div class="dice">
+            <div  class="diceP" id="diceP-2">
+          <p>Player-2 </p> <img id="winnerB" class="hide win" src="images/medal.png" alt="winner medal">
+        </div>
+          <img id="diceB" src="images/dice-6.png" alt="dice image">
+        </div>
+      </div>
+      <div class="scoreBoard">
+        <h2> Score Board</h2>
+        <p id="sr1">Player 1</p>
+        <p id="sr2">Player 2</p>
+        <p>Refresh And Play...</p>
+      </div>
+    </div>
+    <footer>Copyright @ Athul.</footer>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
